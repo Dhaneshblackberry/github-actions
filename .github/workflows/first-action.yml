@@ -4,12 +4,12 @@ run-name: ${{ github.actor }} is learning GitHub Actions
 on:
   push:
     branches:
-      - dev
+      - main
     paths:
       - docs/**
 
   pull_request:
-    branches: [dev]
+    branches: [main]
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
